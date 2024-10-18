@@ -32,6 +32,10 @@ const Editor = () => {
 				initialCanvas: canvas,
 			}
 		);
+
+		return ()=>{
+			canvas.dispose();
+		}
 	}, [init]);
 
 	return (
